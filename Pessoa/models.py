@@ -16,7 +16,7 @@ class Pessoa(models.Model):
     nome = models.CharField(max_length=255, null=False, blank=False)
     data_nascimento = models.DateField(blank=True, null=True)
     cpf = models.CharField(max_length=15, unique=True, null=False, blank=False)
-    foto = models.ImageField(upload_to='fotodpesoal', null=True, blank=True)
+    foto = models.ImageField(upload_to='fotopessoal', null=True, blank=True)
     telefone = models.OneToOneField(Telefone, blank=True, null=True, on_delete=models.CASCADE)
 
     def __str__(self):

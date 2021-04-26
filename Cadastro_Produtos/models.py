@@ -6,7 +6,7 @@ from Pessoa.models import Pessoa
 
 
 class Cadastro_Produtos(models.Model):
-    foto = models.ImageField(upload_to='fotodpesoal', null=True, blank=True)
+    foto = models.ImageField(upload_to='pic', null=True, blank=True)
     produto = models.CharField(max_length=255, null=False, blank=False)
     valor = models.DecimalField(max_digits=15, decimal_places=2)
     data_pedido = models.DateField(null=False, blank=False)
