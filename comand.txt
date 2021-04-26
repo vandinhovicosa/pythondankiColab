@@ -1,0 +1,25 @@
+
+pip install django
+django-admin startproject Cadastro .
+python manage.py runserver
+pip install Pillow
+
+# Criar Banco de Dados
+python manage.py migrate
+# Cria super user
+python manage.py createsuperuser
+# Iniciando o servidor
+python manage.py runserver
+
+python manage.py startapp Cadastro_Produtos
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py startapp Enderecos
+python manage.py makemigrations
+python manage.py migrate
+
+python manage.py startapp Pessoa
+python manage.py makemigrations
+python manage.py migrate
+
